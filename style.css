@@ -432,6 +432,10 @@ input[type=submit]:hover {
         border-bottom: none;
         padding-bottom: 0;
     }
+    
+    .my-border:hover {
+        border-bottom: none;
+    }
 
     .border {
         margin-bottom: 6em;
@@ -577,6 +581,7 @@ input[type=submit]:hover {
     }
 
     textarea {
+        margin-bottom: 2em;
         padding: 1.5em 16vh 1.5em 1.5em;
     }
 
