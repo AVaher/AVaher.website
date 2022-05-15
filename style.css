@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Navigeerimisriba ja taust */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+ }
+
+header {
+    background: url(assets/homepage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+ 
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #062A60;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: start;
+
+}
+ 
+.logo {
+    margin-left: 2em;
+}
+
+.nav-list, .type {
+    list-style-type: none;
+    display: flex;
+    padding: 1em 3em 1em 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: .9rem;
+   
+}
+
+.my-type {
+    border-bottom: 2px solid #2CD1C7;
+    padding-bottom: .7em;
+}
+.no-border {
+    border-bottom: none;
+}
+
+.border:hover {
+    border-bottom: 2px solid #2CD1C7;
+    padding-bottom: .7em;
+}     
+
+.my-border:hover {
+    border-bottom: 2px solid #2CD1C7;
+    padding-bottom: .7em;
+}
+
+/* Teenuse alapealkirjad */
+
+.sub-menu {
+    display: none;
+}
+
+
+.nav-container .nav-list .type:hover .sub-menu {
+    display: block;
+    position: absolute;
+    margin-left: -.6em;
+    margin-top: 2em;
+}
+
+ .nav-container .nav-list .type:hover .sub-menu ul {
+    padding: 15px;
+    background: rgb(29, 77, 167);
+    list-style: none;
+}
+
+ .nav-container .nav-list .type:hover .sub-menu ul li {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+ .nav-container .nav-list .type:hover .sub-menu ul li a:hover {
+    border-bottom: none;
+    background-color: rgb(55, 120, 240);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}   
+
+
+/* Tekst avalehel */
+
+
+.home-page-text {
+    display: flex;
+    margin: 9em 0 0 9em;
+    padding-top: 8em;
+    color: white;
+}
+
+
+h1 {
+    padding-bottom: .5em;
+    position: relative;
+    font-size: 4.4rem;
+}
+
+.home-page-bigger-parapraph {
+    padding-bottom: .7em;
+    margin-right: 10em;
+    font-size: 1.2rem;
+
+}
+
+.home-page-smaller-paragraph {
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+
+
+.home-page-button {
+    margin-top: 7em;
+    padding: 1.3em 1.5em;
+    border: none;
+    border-radius: 50px;
+    background-color: #CA396D;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+
+
+/* Ettevõttest */
+
+
+:root {
+    --bg-color: #A9DEEF;
+}
+
+
+section {
+    background-color: var(--bg-color);
+}
+
+.heading {
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.content {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.info {
+    font-size: 1.2rem;
+    color: black;
+    padding-bottom: 2em;
+    margin-right: 10em;
+    line-height: 35px;    
+}
+
+.computer {
+    height: 580px;
+    margin-top: -2em;
+    margin-right: 3em;
+    
+}
+
+/* Teenused */
+
+.text {
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.services {
+    margin-left: 5em;
+}
+
+.example {
+    margin-top: 2.5em;
+    margin-right: 10em;
+}
+
+.para {
+    padding-top: 1em;
+}
+
+
+/* Põhiteenuste hinnakiri */
+
+
+.first-table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 5em 0 0 15em;
+}
+
+th, td {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 5em;
+    padding-bottom: .5em;
+    color: white;
+    background: #03809B;
+}
+
+th {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+  
+/* top-right border-radius */
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+  
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+  
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.final-cell {
+    padding-bottom: 2em;
+}
+
+.small-heading {
+    margin-left: -.7em;
+}
+
+
+/* Lisateenuste hinnakiri */
+
+.second-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.excep {
+    padding-bottom: 2.8em;
+}
+
+/* Kliendid meist */
+
+.last {
+    margin-bottom: 10em;
+ }
+
+
+/* Kontakt */
+
+.contact-bg {
+    background: linear-gradient(#0E6F8D, #1C8FD0, #00B2FE);
+    text-align: center;
+    height: 100vh;
+}
+
+.grid-for-contact {
+    background: #062A60;
+    height: 70vh;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 4em;
+    border-radius: 50px;
+}
+
+.contact-title {
+    padding-bottom: 3em;
+    padding-top: 3em;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+input[type=text], [type=email] {
+    display: block;
+    margin: 1em auto 3em auto;
+    padding: 1.5em 27vh 1.5em 1.5em;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea {
+    display: block;
+    margin: 1em auto 4em auto;
+    padding: 1.5em 22vh 1.5em 1.5em;
+    border: none;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    padding: 1em 15em;
+    background-color: #0BABDE;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+input[type=submit]:hover {
+    background-color: #0188b1;
+    transition: 1s ease;
+}
+
+.placeholder {
+    font-family: 'Poppins';
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background: rgb(259, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }   
+}
+
+
+/* Telefoni versioon */
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+     .container {
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+    } 
+
+    .nav-list {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        width: 42vh;
+        height: 100vh;
+        display: block;
+        background: #062A60;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding-top: 3em;
+    }
+
+
+    .my-type {
+        margin-bottom: 5em;
+        border-bottom: none;
+    }
+
+    .border:hover {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .border {
+        margin-bottom: 6em;
+    }
+
+    .my-border {
+        margin-top: 6em;
+    }
+
+    .sub-menu ul {
+        display: none;
+    }
+
+    a {
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+
+    /* 1.osa*/
+
+    .home-page-text {
+        display: block;
+        margin-top: -1.5em;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 1.5em;
+    }
+
+    .home-page-bigger-parapraph {
+        margin: 0;
+        padding-left: 2em;
+        padding-right: .5em;
+        padding-top: .5em;
+        font-size: 1.1rem;
+    }
+
+    .home-page-smaller-paragraph {
+        font-size: 1.3rem;
+        padding-top: 1em;
+        padding-left: 1.7em;
+    }
+
+    .calculator {
+        width: 250px;
+        top: 570px;
+        margin-right: 2em;
+        margin-left: 13em;
+        margin-top: -2em;
+    }
+
+    .home-page-button {
+        margin-left: 2em;
+        margin-top: 3em;
+        padding: 1.1em;
+        font-size: 1rem;
+    }
+
+    /* 2.osa */
+
+    .heading {
+        margin-top: -1.5em;
+        padding-top: 4em;
+        font-size: 1.5rem;
+    }
+
+    .info {
+        margin: 2em;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+
+    .computer {
+        width: 300px;
+        height: 300px;
+        margin-top: 2em;
+        margin-left: 6em;
+    }
+
+    /* 3.osa */
+
+    .services {
+        margin: 2em 6em;
+        width: 300px;
+        height: 300px;
+    }
+
+    .example {
+        margin: 2em;
+    }
+
+    .text {
+        justify-content: none;
+        flex-direction: none;
+    }
+
+    /* 4.osa */
+
+    .first-table {
+        margin-left: 3em;
+        margin-bottom: 2em;
+    }
+
+    th, td {
+        padding-left: 3em;
+        padding-right: 3em;
+        font-size: 1rem;
+    }
+
+    .no-heading {
+        display: none;
+    }
+    .second-table {
+        display: none;
+    }
+
+    /* 5.osa */
+
+    .last {
+        padding-bottom: 3em;
+    }
+
+    .contact-bg {
+        margin-top: -2.2em;
+    }
+
+    .grid-for-contact {
+        max-width: 470px;
+        padding: 3em 2.5em;
+    }
+
+    input[type=text], [type=email] {
+        padding: 1.5em 21vh 1.5em 1.5em;
+    }
+
+    textarea {
+        padding: 1.5em 16vh 1.5em 1.5em;
+    }
+
+    input[type=submit] {
+        padding: 1em 11em;
+    }
+
+    .nav-list li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 35px;
+    }
+
+}
+
+@media screen and (max-width: 515px) {
+    .grid-for-contact {
+        max-width: 400px;
+    }
+
+    input[type=text], [type=email] {
+        padding: 1.5em 15vh 1.5em 1.5em;
+    }
+
+    textarea {
+        padding: 1.5em 10vh 1.5em 1.5em;
+    }
+
+    input[type=submit] {
+        padding: 1em 9em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .calculator {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        padding-top: 4em;
+    }
+
+    .home-page-button {
+        margin-top: 6em;
+    }
+}
+
+
+.nav-active {
+    transform: translateX(0%)
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+
+.toggle .line-1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.toggle .line-2 {
+    opacity: 0;
+}
+
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
