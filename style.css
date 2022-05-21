@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: 'Poppins';
- }
+}
 
 header {
     background: url(assets/homepage.png);
@@ -314,7 +314,7 @@ table tr:last-child td:last-child {
 input[type=text], [type=email] {
     display: block;
     margin: 1em auto 3em auto;
-    padding: 1.5em 27vh 1.5em 1.5em;
+    padding: 1.5em 57% 1.5em 1.5em;
     border: none;
     border-radius: 10px;
 }
@@ -322,7 +322,7 @@ input[type=text], [type=email] {
 textarea {
     display: block;
     margin: 1em auto 4em auto;
-    padding: 1.5em 22vh 1.5em 1.5em;
+    padding: 1.5em 47% 1.5em 1.5em;
     border: none;
     border-radius: 10px;
     resize: vertical;
@@ -397,6 +397,72 @@ input[type=submit]:hover {
     display: none;
 }
 
+@media screen and (max-width: 1635px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .calculator {
+        width: 50%;
+        height: 50%;
+        margin-right: 10%;
+    }
+    .grid-for-contact {
+        padding-top: 3em;
+    }
+    textarea {
+        padding-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1440px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.8em;
+    }
+    .home-page-bigger-parapraph, .home-page-smaller-paragraph{
+        width: 100%;
+    }
+    .home-page-bigger-parapraph {
+        font-size: 1.3rem;
+    }
+    .home-page-smaller-paragraph{
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 2em;
+    }
+    .calculator {
+        display: none;
+    }
+    .computer {
+        display: none;
+    }
+    .services{
+        width: 40%;
+        height: 40%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .text {
+        margin: 0;
+    }
+    .new_info {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .first-table {
+        width: 60%;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     html, body {
         margin: 0;
@@ -432,7 +498,6 @@ input[type=submit]:hover {
         border-bottom: none;
         padding-bottom: 0;
     }
-    
     .my-border:hover {
         border-bottom: none;
     }
@@ -573,15 +638,15 @@ input[type=submit]:hover {
 
     .grid-for-contact {
         max-width: 470px;
-        padding: 2em 2.5em;
+        padding: 3em 2.5em;
     }
 
     input[type=text], [type=email] {
-        padding: 1.5em 21vh 1.5em 1.5em;
+        padding: 1.5em 50% 1.5em 1.5em;
     }
 
     textarea {
-        padding: 1.5em 16vh 1.5em 1.5em;
+        padding: 1.5em 40% 0em 1.5em;
     }
 
     input[type=submit] {
@@ -607,11 +672,11 @@ input[type=submit]:hover {
     }
 
     input[type=text], [type=email] {
-        padding: 1.5em 15vh 1.5em 1.5em;
+        padding: 1.5em 35% 1.5em 1.5em;
     }
 
     textarea {
-        padding: 1.5em 10vh 1.5em 1.5em;
+        padding: 1.5em 25% 0em 1.5em;
     }
 
     input[type=submit] {
@@ -620,7 +685,7 @@ input[type=submit]:hover {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .calculator {
         display: none;
     }
