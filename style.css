@@ -666,6 +666,11 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 515px) {
+    html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
     .grid-for-contact {
         max-width: 400px;
     }
@@ -685,6 +690,11 @@ input[type=submit]:hover {
 
 
 @media (max-width: 500px) {
+    html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
     .calculator {
         display: none;
     }
