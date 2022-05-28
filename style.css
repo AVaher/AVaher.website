@@ -187,9 +187,7 @@ section {
 
 .computer {
     height: 580px;
-    margin-top: -2em;
     margin-right: 3em;
-    
 }
 
 /* Teenused */
@@ -291,7 +289,7 @@ table tr:last-child td:last-child {
 .contact-bg {
     background: linear-gradient(#0E6F8D, #1C8FD0, #00B2FE);
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -313,20 +311,20 @@ table tr:last-child td:last-child {
 }
 
 input[type=text], [type=email] {
-    display: block;
-    margin: 1em auto 3em auto;
-    padding: 1.5em 57% 1.5em 1.5em;
-    border: none;
+    width: 100%;
+    outline: none;
+    padding: 1.5em 1.5em;
+    margin-bottom: 2em;
     border-radius: 10px;
 }
 
 textarea {
-    display: block;
-    margin: 1em auto 4em auto;
-    padding: 1.5em 47% 1.5em 1.5em;
-    border: none;
+    min-height: 150px;
+    width: 100%;
+    outline: none;
+    padding: 1.5em 1.5rem;
+    margin-bottom: 2em;
     border-radius: 10px;
-    resize: vertical;
 }
 
 input[type=submit] {
