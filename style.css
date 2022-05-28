@@ -292,6 +292,7 @@ table tr:last-child td:last-child {
     background: linear-gradient(#0E6F8D, #1C8FD0, #00B2FE);
     text-align: center;
     height: 100%;
+    width: 100%;
 }
 
 .grid-for-contact {
@@ -414,7 +415,12 @@ input[type=submit]:hover {
     textarea {
         padding-bottom: 0;
     }
-    
+    .services {
+        margin-right: 5em;
+    }
+    .text {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1440px){
@@ -444,10 +450,8 @@ input[type=submit]:hover {
         display: none;
     }
     .services{
-        width: 40%;
-        height: 40%;
-        margin-right: 5%;
-        margin-top: 5%;
+        max-width: 50%;
+        max-height: 50%;
     }
     .text {
         margin: 0;
@@ -461,6 +465,16 @@ input[type=submit]:hover {
     }
 
 }
+@media (max-width: 1040px) {
+    .services {
+        max-width: 40%;
+        max-height: 40%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+}
+
 
 @media (max-width: 768px) {
     html, body {
