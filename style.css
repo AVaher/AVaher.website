@@ -296,7 +296,7 @@ table tr:last-child td:last-child {
 
 .grid-for-contact {
     background: #062A60;
-    height: 70vh;
+    min-height: 70vh;
     max-width: 570px;
     margin: 0 auto;
     padding: 4em;
