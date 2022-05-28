@@ -291,7 +291,7 @@ table tr:last-child td:last-child {
 .contact-bg {
     background: linear-gradient(#0E6F8D, #1C8FD0, #00B2FE);
     text-align: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .grid-for-contact {
