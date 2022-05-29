@@ -28,6 +28,7 @@ header {
     top: 0;
     width: 100%;
     background-color: #062A60;
+    z-index: 1;
 }
   
 .nav-container {
